@@ -1,0 +1,11 @@
+package br.com.geac.backend.aplication.mappers;
+
+import br.com.geac.backend.aplication.dtos.reponse.LocationResponseDTO;
+import br.com.geac.backend.domain.entities.Location;
+import org.mapstruct.Mapper;
+
+@Mapper(componentModel = "spring")
+public interface LocationMapper {
+    LocationResponseDTO toDto (Location location);
+
+}
